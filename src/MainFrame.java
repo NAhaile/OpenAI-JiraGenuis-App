@@ -31,6 +31,10 @@ public class MainFrame extends JFrame {
         codeReviewButton.setAlignmentX(Component.CENTER_ALIGNMENT); // Center horizontally
         documentationButton.setAlignmentX(Component.CENTER_ALIGNMENT); // Center horizontally
 
+        // Disable focus for the buttons
+        codeReviewButton.setFocusable(false);
+        documentationButton.setFocusable(false);
+
         // Add actions to the buttons
         codeReviewButton.addActionListener(e -> {
             CodeReviewPage codeReviewPage = new CodeReviewPage(this);
@@ -56,3 +60,4 @@ public class MainFrame extends JFrame {
         add(buttonPanel, BorderLayout.CENTER);
     }
 }
+

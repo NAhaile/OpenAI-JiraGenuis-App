@@ -61,6 +61,13 @@ public class DocumentationPage extends JFrame {
         editButton = new JButton("Edit");
         editButton.setEnabled(false); // Initially disabled
 
+        //disable focus for the buttons
+        backButton.setFocusable(false);
+        saveButton.setFocusable(false);
+        clearButton.setFocusable(false);
+        documentButton.setFocusable(false);
+        editButton.setFocusable(false);
+
         backButton.addActionListener(e -> {
             mainFrame.setVisible(true);
             dispose();

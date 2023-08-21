@@ -73,6 +73,12 @@ public class CodeReviewPage extends JFrame {
         clearButton = new JButton("Clear");
         reviewButton = new JButton("Review");
 
+        // Disable focus for the buttons
+        backButton.setFocusable(false);
+        saveButton.setFocusable(false);
+        clearButton.setFocusable(false);
+        reviewButton.setFocusable(false);
+
         backButton.addActionListener(e -> {
             mainFrame.setVisible(true);
             dispose();
@@ -153,5 +159,6 @@ public class CodeReviewPage extends JFrame {
                     "Save Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+
 
 }
